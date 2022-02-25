@@ -1,14 +1,15 @@
 <html>
 <head>
-  <title>Encriptado</tittle>
+  <title>Encriptado</title>
   <meta charset="utf-8">
 </head>
 <body>
 
-<input type="text" size="25"/>
-<button type="submit">Encriptar</button>
-<button type="submit">Desencriptar</button>
+<input type="password" size="25" minlengt="8" />
+<button type="submit" onclick="encriptar(this)">Encriptar</button>
+<button type="submit" onclick="desencriptar(this)">Desencriptar</button>
 
+<p id='resultado'></p>
 
 <script>
 function encriptar(elemento){
