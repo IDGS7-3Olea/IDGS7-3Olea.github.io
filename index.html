@@ -2,17 +2,34 @@
 <head>
   <title>Encriptado</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <style>
+body {
+  background-image: url("https://wallpaperaccess.com/full/2641074.gif");
+   background-repeat: no-repeat;
+}
+</style>
 </head>
-<body>
-<div class="container" style="align-items:center; display:flex; justify-content:center;">
-<input type="password" size="25" minlengt="8" />
-  <br></br>
-<button type="submit" class="btn btn-primary" onclick="encriptar(this)">Encriptar</button>
-  <br></br>
-<button type="submit" class="btn btn-success" onclick="desencriptar(this)">Desencriptar</button>
-  <br></br>
-<p id='resultado'></p>
-  </div>
+
+<br>
+
+<div class="container-fluid" style="width: 600px; text-align: center; height: 682px;  background-color: rgba(152,187,245, 95%);">
+	<h1>Encriptacion de Contraseñas</h1>
+	<h2> Ingrese una contraseña de 8 digitos como minimo</h2>
+
+			<input type="password" style="" size="25" minlengt="8"/>
+  			<br></br>
+			<button type="submit" class="btn btn-primary" onclick="encriptar(this)">Encriptar</button>
+  			<br></br>
+			<button type="submit" class="btn btn-success" onclick="desencriptar(this)">Desencriptar</button>
+  			<br></br>
+  			<h3>Contraseña Encriptada:</h3>
+			<h4 id='resultado'></h4>
+		
+		</div>
 <script>
 function encriptar(elemento){
     var palabra = document.getElementsByTagName("input")[0].value;
